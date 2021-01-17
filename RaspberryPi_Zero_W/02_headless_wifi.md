@@ -19,9 +19,9 @@ For more information refer to [Setting up a Raspberry Pi headless](https://www.r
    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
    update_config=1
    network={
-   	ssid="<your WiFi name here>"
-   	psk="<your WiFi password here>"
-   	key_mgmt=WPA-PSK
+      ssid="<your WiFi name here>"
+      psk="<your WiFi password here>"
+      key_mgmt=WPA-PSK
    }
    ```
 
@@ -39,9 +39,9 @@ For more information refer to [Setting up a Raspberry Pi headless](https://www.r
    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
    update_config=1
    network={
-   	ssid="<your WiFi name here>"
-   	psk="<your WiFi password here>"
-   	key_mgmt=WPA-PSK
+      ssid="<your WiFi name here>"
+      psk="<your WiFi password here>"
+      key_mgmt=WPA-PSK
    }
    EOF
    ```
@@ -72,11 +72,11 @@ For more information refer to [Setting up a Raspberry Pi headless](https://www.r
 
 4. If you get a `Host not found` , `Connection refused` or any other error, wait a few more minutes and try again the same command.
 
-5. Enter `yes` when warn about the authenticity 
+5. Enter `yes` when warn about the authenticity
 
 6. Type the password `raspberry`
 
-From the iPad, follow similar instructions but using a SSH application such as Terminus on step #3. 
+From the iPad, follow similar instructions but using a SSH application such as Terminus on step #3.
 
 You cannot use the `ssh` on iSH using `raspberrypi.local` because mDNS or Avahi cannot work on Alpine. To use iSH get the IP address once connected then SSH to the Raspberry Pi Zero using the IP address. To find the Raspberry Pi Zero IP address, follow any of the remote headless methods mentioned in [IP Address](https://www.raspberrypi.org/documentation/remote-access/ip-address.md).
 
@@ -94,11 +94,9 @@ ifconfig
 ip addr show wlan0
 ```
 
-
-
 ## Initial setup
 
-Once logged in, you should inmediately change the hostname and the password of the user `pi`. Then update and upgrade the system.
+Once logged in, you should immediately change the hostname and the password of the user `pi`. Then update and upgrade the system.
 
 1. Execute `sudo raspi-config` . Use the arrow keys, tab, enter and escape to navigate through the application
 
@@ -135,13 +133,8 @@ arp -n rpizerow.local
 
 ## Enable VNC
 
-Enable VNC is a good idea if you'd like to use the graphical interface.
+Enable VNC may be a good idea if you'd like to use the graphical interface, however it may be very slow on a Raspberry Pi Zero.
 
 1. Execute `sudo raspi-config` . Use the arrow keys, tab, enter and escape to navigate through the application
 2. Go to `Interface Options` > `P3 VNC` and follow the instructions
 3. Go back, then go to `Finish` or press Escape
-
-
-
-
-

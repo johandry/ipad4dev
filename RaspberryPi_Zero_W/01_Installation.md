@@ -10,7 +10,7 @@ This is the procedure I followed to install Raspberry Pi OS Lite on a Raspberry 
 
 ## Raspberry Pi OS Lite Installation using Raspberry Pi Imager
 
-1. Dowload Raspberry Pi Imager from the [Raspberry Pi OS](https://www.raspberrypi.org/software/) page
+1. Download Raspberry Pi Imager from the [Raspberry Pi OS](https://www.raspberrypi.org/software/) page
 2. Insert the microSD card to the SD/microSD card reader. Verify the content, it will be erased in the next step.
 3. Execute it, then:
    1. Choose the OS, in this case it is: Raspberry Pi OS (Other) > Raspberry Pi OS Lite (32 Bit)
